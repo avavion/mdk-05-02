@@ -3,12 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alan Bogov" />
+    <meta name="description" content="Урок 1 - просвященние в CSS" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Пара 1 - изучение CSS</title>
+    <title>Пара - изучение CSS</title>
   </head>
   <body>
+    <section class="hero">
       <div class="container">
-          <a href="">Ссылка</a>
+        <ul class="hero-list">
+          <li class="hero-list__item js-cell">
+            <div class="hero-list__card card js-card" draggable="true">
+              <h3 class="hero-list__card-header card-header">
+                Заголовок задачи
+              </h3>
+              <div class="hero-list__card-content card-content">
+                <p class="hero-list__card-text card-content__text">
+                  Текст задачи
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="hero-list__item js-cell"></li>
+          <li class="hero-list__item js-cell"></li>
+          <li class="hero-list__item js-cell"></li>
+        </ul>
       </div>
+    </section>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
