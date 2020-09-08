@@ -7,10 +7,15 @@ const dragAndDrop = () => {
   const dragStart = function () {
     setTimeout(() => {
       this.classList.add("hide");
-    }, 10);
+    }, 500);
+  };
+
+  const dragEnd = function () {
+    this.classList.remove("hide");
   };
 
   card.addEventListener("dragstart", dragStart);
+  card.addEventListener("dragend", dragEnd);
 };
 
 window.addEventListener("DOMContentLoaded", () => {
